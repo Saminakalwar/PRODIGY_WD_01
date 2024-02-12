@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body class="dark-mode">
+
+    <header>
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+
+                <li id="toggle-switch-container">
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" onclick="toggleBackgroundColor()">
+                        <span class="slider round"></span>
+                    </label>
+                </li>
+            </ul>
+        
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="home" class="section1">
+            <div class="hero-text">
+ <h1>Welcome to Our Coffee Shop</h1>
+ <button class="btn">Check Here</button>
+            </div>
+           
+        </section>
+
+        <section  id="product" class="section">
+            <h2>Our Products</h2>
+            <div class="gallery" >
+                <div class="image">
+                    <img src="b1.jpeg" alt="Coffee Image 1">
+                    <p> A cup of freshly brewed coffee.</p>
+                </div>
+                <div class="image">
+                    <img src="b1.jpeg" alt="Coffee Image 2">
+                    <p> Espresso shot with latte art.</p>
+                </div>
+                <div class="image">
+                    <img src="b1.jpeg" alt="Coffee Image 3">
+                    <p> Coffee beans in a wooden scoop.</p>
+                </div>
+                <div class="image">
+                    <img src="b1.jpeg" alt="Coffee Image 4">
+                    <p> Coffee cup with a heart-shaped foam.</p>
+                </div>
+                <div class="image">
+                    <img src="b1.jpeg" alt="Coffee Image 1">
+                    <p> A cup of freshly brewed coffee.</p>
+                </div>
+                <div class="image">
+                    <img src="b2.jpeg" alt="Coffee Image 2">
+                    <p> Espresso shot with latte art.</p>
+                </div>
+                <div class="image">
+                    <img src="b2.jpeg" alt="Coffee Image 3">
+                    <p> Coffee beans in a wooden scoop.</p>
+                </div>
+                <div class="image">
+                    <img src="b2.jpeg" alt="Coffee Image 4">
+                    <p>Coffee cup with a heart-shaped foam.</p>
+                </div>
+                <div class="image">
+                    <img src="b2.jpeg" alt="Coffee Image 4">
+                    <p> Coffee cup with a heart-shaped foam.</p>
+                </div>
+                <div class="image">
+                    <img src="b2.jpeg" alt="Coffee Image 4">
+                    <p>Coffee cup with a heart-shaped foam.</p>
+                </div>
+            </div>
+        </section>
+
+      
+
+        <section id="aboutus" class="section">
+            <h2>About Us</h2>
+            <div class="hero">
+                <img src="p2.jpeg" alt="Coffee Image 3">
+                
+                
+            </div>
+            <p>In Nepali, Sapana translates to dream. Everything in life begins with a dream. For our team at Sapana Coffee, this dream was to create opportunities in remote villages across Nepal. 
+                What began as a volunteer trip for Founder Dan Maurer to Nepal in 2011, grew into a mission to support local farmers and share this distinctly unique coffee with the rest of the world.
+                Sapana Coffee, in partnership with Elevate Nepal, is involved with every step of the process from seed to cup, to guarantee that every person in the supply chain is treated fairly. Our coffee is grown with organic practices on one single farm in the shadow of the Himalayan mountains. This bright, fresh, and silky coffee has notes of stone fruit, toasted grains, roasted notes, and dark chocolate.
+                Proceeds from each sale of Sapana Coffee support our farmers and their communities.  Sip with satisfaction knowing that you are making a dream come true in Nepal. Dhanyabad (Thank You).</p>
+        </section>
+
+        <section  id="contact" class="section">
+            <h2>Contact Us</h2>
+            <div class="container">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Coffee Shop. All rights reserved.</p>
+    </footer>
+
+    <script >
+
+        function toggleBackgroundColor() {
+           
+    document.body.classList.toggle('dark-mode');
+
+
+}
+
+    </script>
+</body>
+</html>
